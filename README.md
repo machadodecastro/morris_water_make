@@ -1,4 +1,10 @@
-1. Morris SSM Spatial Memory Agent
+## Introduction
+
+Spatial navigation is one of the most extensively studied cognitive functions in neuroscience. The Morris Water Maze (MWM) remains a classical experimental paradigm for investigating spatial learning and memory in rodents. In the traditional task, a mouse or rat must locate a hidden platform submerged in opaque water using distal visual cues placed around the environment. Successful navigation requires the formation of an internal spatial representation of the environment.
+
+Recent advances in artificial intelligence have introduced the concept of World Models, where agents construct internal representations of their environment through self-supervised learning rather than explicit reward maximization. This article presents a conceptual bridge between biological spatial navigation and computational world models through a simulated Morris Water Maze agent that learns using persistent spatial memory and State Space Models (SSMs). Unlike conventional Reinforcement Learning (RL) agents, the proposed agent develops navigation strategies by memorizing environmental landmarks, forming internal spatial representations, and continuously refining its cognitive map through experience.
+
+## Morris SSM Spatial Memory Agent
 
 A simple Morris Water Maze simulation with:
 
@@ -10,12 +16,12 @@ A simple Morris Water Maze simulation with:
 
 The agent learns from its own navigation sequence:
 
-# current observation + action + internal hidden state -> next observation prediction
+- current observation + action + internal hidden state -> next observation prediction
 
 The prediction error is used only as a self-supervised learning signal.
 There are no rewards, no Q-table, no DQN, no policy-gradient algorithm.
 
-2. Why State Space Models?
+## Why State Space Models?
 
 The SSM keeps an internal hidden state. This hidden state works like a compact temporal memory of the recent trajectory:
 
@@ -32,21 +38,21 @@ The agent uses:
 
 
 
-3. Run
+## Run
 
+´´´bash
+pip install -r requirements.txt
+python main.py
+´´´
 
-> pip install -r requirements.txt
-> python main.py
-
-
-4. Controls
+## Controls
 
 - M: show/hide mental map
 - N: new trial, keep memory
 - C: clear memory and model
 - ESC: quit
 
-5. Outputs
+## Outputs
 
 
 outputs/mental_map.json
