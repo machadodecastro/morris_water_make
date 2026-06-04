@@ -40,10 +40,10 @@ The agent uses:
 
 ## Run
 
-´´´bash
+```bash
 pip install -r requirements.txt
 python main.py
-´´´
+```
 
 ## Controls
 
