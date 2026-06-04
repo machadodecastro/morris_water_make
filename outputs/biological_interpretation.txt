@@ -1,0 +1,20 @@
+Biological interpretation of spatial memory
+====================================================
+
+Better performance is indicated by:
+- lower latency;
+- shorter path length;
+- more time in the target quadrant;
+- more crossings over the platform location.
+
+Completed trials: 427
+Initial latency: 2497 steps
+Current latency: 117 steps
+Initial path length: 7241.30
+Current path length: 339.30
+Initial target quadrant time: 1033 steps
+Current target quadrant time: 36 steps
+Initial platform crossings: 1
+Current platform crossings: 1
+
+Conclusion: spatial memory is still forming or metrics have not improved consistently yet.
